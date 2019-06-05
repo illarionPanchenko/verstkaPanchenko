@@ -1,33 +1,288 @@
-.App {
-  text-align: center;
+html{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body{
+  padding: 0;
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
+  display: grid;
+  grid-template-columns: 2.5% 95% 2.5%;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-color: #0070af;
+  width: 100%;
+  height: 14.3vw;
+  margin: 0;
+}
+h1{
+  color: white;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3.5vw;
+  padding-top: 1.5vw;
+  padding-left: 5vw;
+}
+.headerMenu{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.headerButton{
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  padding-bottom: 0.5vw;
+}
+.actual{
+  border-bottom: 1px solid white;
+}
+.leben{
+  display: grid;
+  grid-template-columns: 43% 57%;
+
+}
+.foto{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.7vw;
+}
+.headlineWrapper{
+  display: grid;
+  grid-template-columns: 43% 57%;
+}
+
+.bioMain{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3vw;
+  font-weight: 400;
+  margin: 1vw;
+  margin-top: 2.5vw;
+  margin-left: 0;
+
+}
+.bioText{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4vw;
+  line-height: 1.8;
+  padding-right: 3vw;
+}
+img {
+  max-width: 67%;
+  height: auto;
+}
+.preise{
+  display: grid;
+  grid-template-columns: 62% 38%;
+}
+.foto2{
+  margin-top: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 4vw;
+}
+.preiseWrapper{
+  padding-left: 6.5vw
+}
+.preiseMain{
+  margin-top: 4vw;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-bottom: 3vw;
+}
+.img2{
+  max-width: 80%;
+  height: auto;
+}
+.preiseText{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4vw;
+  line-height: 2.5;
+  padding-right: 3vw;
+}
+.footer{
+  background-color: #0070af;
+  width: 100%;
+  height: 13.5vw;
+  margin-top: 4vw;
+  display: grid;
+  grid-template-columns: 35% 25% 40%;
+}
+.footerText{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+.footerTextFont{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2vw;
   color: white;
+  font-weight: 400;
 }
-
-.App-link {
-  color: #61dafb;
+.footerInfo{
+  display: flex;
+  flex-direction:column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footerInfoFont{
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3vw;
+  margin-left: 1vw;
+  margin-top: 2px;
+}
+.phoneIcon{
+  background-image: url("./phone.png");
+  width: 1.8vw;
+  height: 1.8vw;
+  background-size: cover;
+}
+.flex{
+  display: flex;
+  margin-top:2vw;
+}
+.mailIcon{
+  background-image: url("./mail.png");
+  width: 1.8vw;
+  height: 1.8vw;
+  background-size: cover;
+}
+.homeIcon{
+  background-image: url("./home.png");
+  width: 1.8vw;
+  height: 1.8vw;
+  background-size: cover;
+}
+@media screen and (max-width: 800px) {
+  .leben {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bioText {
+    font-size: 3vw;
+    margin-top: 5vw;
+    margin-left: 1vw;
+  }
+
+  .preise {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .preiseText {
+    font-size: 3vw;
+  }
+
+  .img2 {
+    max-width: 100%;
+  }
+
+  .foto2 {
+    padding: 0;
+  }
+
+  .preiseMain {
+    font-size: 5vw;
+  }
+
+  .preiseWrapper {
+    padding: 0;
+    margin-left: 1vw;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footerInfo {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homeText {
+    margin-bottom: 2vw;
+  }
+
+  .headerMenu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerButton {
+    font-size: 3vw;
+  }
+
+  h1 {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .footerInfoFont{
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 450px){
+  .bioMain{
+    font-size: 6vw;
+  }
+  h1{
+    font-size: 7vw;
+  }
+  .headerButton{
+    font-size: 4.7vw;
+    width: min-content;
+  }
+  .headerMenu{
+    grid-template-columns: 47% 47%;
+  }
+  .bioText{
+    font-size: 4.7vw;
+  }
+  .preiseText{
+    font-size: 5vw;
+    line-height: 1.5;
+    margin-bottom: 3vw;
+  }
+  .preiseMain{
+    font-size: 6vw;
+  }
+  .footerTextFont{
+    font-size: 5vw;
+  }
+  .footerInfoFont{
+    font-size: 4vw;
+  }
+  .icon{
+    width: 4vw;
+    height: 4vw;
+    margin-top: 1vw;
   }
 }
